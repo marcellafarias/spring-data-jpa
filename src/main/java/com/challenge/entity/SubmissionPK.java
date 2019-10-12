@@ -6,7 +6,7 @@ import javax.persistence.Column;
 import javax.persistence.Embeddable;
 
 @Embeddable
-public class CandidatePK implements Serializable {
+public class SubmissionPK implements Serializable{
 
 	/**
 	 * 
@@ -16,10 +16,7 @@ public class CandidatePK implements Serializable {
 	@Column(name = "user_id")
 	Integer userId;
 
-	@Column(name = "acceleration_id")
-	Integer accelerationId;
-
-	@Column(name = "company_id")
-	Integer companyId;
+	@Column(name = "challenge_id")
+	Integer challengeId;
 
 }
